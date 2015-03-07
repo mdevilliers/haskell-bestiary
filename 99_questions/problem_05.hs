@@ -1,5 +1,6 @@
 
 -- Reverse a list.
+myReverse :: [a] -> [a]
 myReverse list = myReverse_acc list []
 	where
 		myReverse_acc [] acc = acc 
