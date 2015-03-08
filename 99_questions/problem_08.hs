@@ -4,4 +4,5 @@
 --The order of the elements should not be changed.
 import Data.List (group)
 
+compress :: Eq b => [b] -> [b]
 compress list = map (\i -> head i) (group list)
