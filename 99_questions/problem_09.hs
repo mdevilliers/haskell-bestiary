@@ -6,3 +6,7 @@
 import Data.List (group)
 
 pack list = group list --cheating!
+
+pack' (x:xs) = let (first,rest) = span (\i -> i == x) xs
+               in (x:first) : pack rest
+pack' [] = []
